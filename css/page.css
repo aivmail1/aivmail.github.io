@@ -1,0 +1,297 @@
+/* AH 2023-09-07*/
+header h1{margin:120px 100px 80px 100px;font-size:400%;font-weight:900;letter-spacing:-1px;font-family:Oswald;}
+header h2{margin:30px 100px;font-size:170%;font-weight:100;-webkit-text-fill-color:white;letter-spacing:0px;font-family:Lato;}
+header h3{margin:30px 100px;font-size:140%;font-weight:100}
+.col li{
+  text-align: left;
+  list-style:none;
+  padding-bottom: 30px;
+  font-size: 130%;
+}
+.col li span{
+  display: block;
+  font-weight: 500;
+  font-size: 140%;
+  margin:20px 0 10px 0;
+  font-family: Oswald;
+}
+footer .col li{
+  padding-bottom: 0px;
+  font-size: 100%;
+}
+section {
+  padding: 0;
+}
+section, .row {
+    font-size: 100%;
+}
+#details{
+  background: #efefef;
+  color: #222;
+  font-weight: 300;
+}
+#details a{
+  color: #002db9;
+}
+#details a:hover{
+  text-decoration: underline;
+}
+.register_button:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+.col li ol li, .col li ul li{
+  padding: 3px 0 5px !important;
+  font-size: inherit !important;
+  list-style-type: "•  " !important;
+}
+.col li ol li span{
+  font-size: 110%;
+}
+#details .col li{
+  font-weight: 300;
+}
+.box_yellow{
+  max-width: initial;
+  font-size: 100% !important;
+  line-height: 25px;
+}
+.container.limit .row {
+    padding: 100px 0;
+}
+.col .documentation ul li{
+  padding-bottom: 5px !important;
+}
+@media only screen and (max-width:768px) {
+  .container .row .col {
+    padding: 0 40px;
+  }
+  section header {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  header h1{
+    margin:40px 0;
+    padding-top: 0px;
+    line-height: 1.1;
+    font-weight: 900;
+    font-size: 250%;
+    letter-spacing: -1px;
+  }
+  header h2{
+    font-size: 150%;
+    margin:30px 0;
+  }
+  header h3{
+    font-size: 120%;
+    margin:30px 50px
+  }
+  .box_yellow{
+    margin: 0px auto;
+  }
+}
+.table th {
+  width: 20%;
+}
+.superscript { 
+  position: relative; 
+  top: -0.5em; 
+  font-size: 80%;
+}
+sup{
+  font-size: 60%;
+  position: relative;
+  left:2px;
+  top:2px;
+  opacity:0.6;
+}
+.table_details.compare{margin:20px auto 0;border-collapse:collapse;border-spacing:0;}
+.table_details.compare th{font-size:26px;vertical-align:top;text-align:center;font-weight:100;}
+.table_details.compare th p{margin:12px 0;border-bottom:var(--dotted-blue) }
+.table_details.compare th:nth-child(4) p, .table_details.compare th:nth-child(5) p{border-bottom:var(--dotted-blue-lighter)}
+.table_details.compare th p span {display:block;font-size:12px;position:relative;top:-7px;padding:10px 0 30px 0;}
+.table_details.compare tr td span {text-align:right;display:block;position:relative;top:-5px; padding:0 !important;}
+.table_details.compare td:nth-child(1),
+.table_details.compare th:nth-child(1){background-color:transparent;text-align:left;width:32%;},
+.table_details.compare td:nth-child(2),
+.table_details.compare th:nth-child(2){background-color:transparent;text-align:left;width:30px;},
+.table_details.compare td:nth-child(3),
+.table_details.compare th:nth-child(3){background-color:#0a214f;width:calc((100% - 32% - 30px)/4);}
+.table_details.compare td:nth-child(4),
+.table_details.compare th:nth-child(4){background-color:#1d325c;width:calc((100% - 32% - 30px)/4);}
+.table_details.compare td:nth-child(5),
+.table_details.compare th:nth-child(5){background-color:#2a466c;width:calc((100% - 32% - 30px)/4);}
+.table_details.compare td:nth-child(6),
+.table_details.compare th:nth-child(6){background-color:#365274;width:calc((100% - 32% - 30px)/4);}
+.table_details.compare td:nth-child(7),
+.table_details.compare th:nth-child(7){background-color:#526b8a;width:calc((100% - 32% - 30px)/4);}
+.row .col .table_details.compare p {text-align:center !important;}
+.table_details.compare th {padding:15px;}
+.table_details.compare tr, 
+.table_details.compare td{padding:10px;}
+.table_details.compare tr:last-of-type td{border-top:none;}
+.table_details.compare tr:last-of-type td:first-of-type{background-color:inherit}
+.table_details.compare tr:nth-last-child(2) td{padding-bottom:0px;}
+.table_details.compare i{border-radius:50%;background-color:#294b79;color:black;width:15px;height:15px;display:inline-block;text-align:center;font-style:normal;font-size:11px;}
+.table_details.compare i:hover {background-color:rgba(255,255,255,0.7);}
+.table_details.compare .main{font-size: 200%;font-family:oswald}
+.table_details.compare .sub td{padding:3px}
+.table_details.compare .sub td:first-of-type{text-align:right !important;}
+.table_details.compare tr.sub:hover td{background-color:rgba(255,255,255,0.02) !important;border-radius:4px;cursor:default;}
+
+.tooltip {
+    position:relative;
+}
+.tooltip:before {
+    font-style: normal;
+    content: attr(data-text);
+    position:absolute;
+    top:50%;
+    left:100%;
+    transform:translateY(-50%);
+    margin-left:15px;
+    white-space: nowrap;
+    padding:10px;
+    border-radius:10px;
+    background:#222;
+    color: #fff;
+    text-align:center;
+    display:none;
+}
+.tooltip:hover:before {
+  display:block;
+}
+.plan_details th button {
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top:14px;
+}
+
+.plan_details th abbr{
+  font-size: 150%;
+}
+.plan_details th button:hover {
+  background-color: var(--color-blue);
+  color: var(--fbc-white);
+  box-shadow: 0px 0px 2px #024279;
+}
+
+.plan_details input#status {
+  display: none;
+}
+.plan_details input#status + label {
+  height: 38px;
+  width: 160px;
+  display: inline-block;
+}
+.plan_details input#status + label > .status-switch {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color:rgba(255,255,255,0.05);
+  color: white;
+  transition: all 0.3s ease;
+  padding: 3px;
+  border-radius: 30px;
+}
+.plan_details input#status + label > .status-switch:before, 
+.plan_details input#status + label > .status-switch:after {
+  border-radius: 30px;
+  height: calc(100% - 6px);
+  width: calc(50% - 3px);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.plan_details input#status + label > .status-switch:before {
+  background-color: green;
+  color: white;
+  left: 3px;
+  z-index: 10;
+  content: attr(data-unchecked);
+}
+.plan_details input#status + label > .status-switch:after {
+  right: 0;
+  content: attr(data-checked);
+}
+.plan_details input#status:checked + label > .status-switch:after {
+  left: 0;
+  content: attr(data-unchecked);
+}
+.plan_details input#status:checked + label > .status-switch:before {
+  left: 50%;
+  content: attr(data-checked);
+}
+.plan_details input#status:checked ~ table > tbody > tr > td:nth-child(-n + 4):nth-child(n + 3),
+.plan_details input#status:checked ~ table > thead > tr > th:nth-child(-n + 4):nth-child(n + 3),
+.plan_details input#status:not(:checked) ~ table > tbody > tr > td:last-child,
+.plan_details input#status:not(:checked) ~ table > thead > tr > th:last-child,
+.plan_details input#status:not(:checked) ~ table > tbody > tr.main.business,
+.plan_details input#status:not(:checked) ~ table > tbody > tr.sub.business{ 
+  display:none;
+}
+.plan_details input#status:checked ~ table > tbody > tr > td:nth-child(n + 4),
+.plan_details input#status:checked ~ table > tbody > tr > th:nth-child(n + 4){
+  width:20%;
+}
+
+.plan_currency input#currency {
+  display: none;
+}
+
+.plan_currency input#currency + label {
+  height: 38px;
+  width: 74px;
+  display: inline-block;
+}
+.plan_currency input#currency + label > .currency-switch {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color:rgba(255,255,255,0.05);
+  color: white;
+  transition: all 0.3s ease;
+  padding: 3px;
+  border-radius: 30px;
+}
+.plan_currency input#currency + label > .currency-switch:before, 
+.plan_currency input#currency + label > .currency-switch:after {
+  border-radius: 30px;
+  height: calc(100% - 6px);
+  width: calc(50% - 3px);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.plan_currency input#currency + label > .currency-switch:before {
+  background-color: green;
+  color: white;
+  left: 3px;
+  z-index: 10;
+  content: attr(data-unchecked);
+}
+.plan_currency input#currency + label > .currency-switch:after {
+  right: 0;
+  content: attr(data-checked);
+}
+.plan_currency input#currency:checked + label > .currency-switch:after {
+  left: 0;
+  content: attr(data-unchecked);
+}
+.plan_currency input#currency:checked + label > .currency-switch:before {
+  left: 50%;
+  content: attr(data-checked);
+}
+
+.plan_currency input#currency:checked ~ table > thead > tr > th > p > sup:before{ 
+  content: '$';
+}
+.plan_currency input#currency:not(:checked) ~ table > thead > tr > th > p > sup:before{ 
+  content: '€';
+}
