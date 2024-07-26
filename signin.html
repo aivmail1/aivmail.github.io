@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#" dir="ltr">
+  <head>
+	<meta charset="utf-8">
+	<title>AivMail | Log in to AivMail</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Log in to your secure email AivMail.Support the fight for online privacy.">
+	<meta name="author" content="AivMail">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/css/login.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">	
+	<a href="/">
+		<img src="assets/logo.png" alt="AivMail"></a>
+</div>
+	<div class="login-container">
+		<div class="auth-panel">
+			<div class="form-panel">
+				<div class="back-btn">
+						<a href="/">
+							<svg width="32" height="32" enable-background="new 0 0 64 64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+								<path fill="#787878" d="m54 30h-39.899l15.278-14.552c.8-.762.831-2.028.069-2.828-.761-.799-2.027-.831-2.828-.069l-17.448 16.62c-.755.756-1.172 1.76-1.172 2.829 0 1.068.417 2.073 1.207 2.862l17.414 16.586c.387.369.883.552 1.379.552.528 0 1.056-.208 1.449-.621.762-.8.731-2.065-.069-2.827l-15.342-14.552h39.962c1.104 0 2-.896 2-2s-.896-2-2-2z"></path>
+							</svg>
+						</a>
+					</div>
+					<h1 id="title" style="color: rgb(69, 69, 69);">Log in</h1>
+					<form name="authForm" method="post" action="/usw?type=L&amp;state=1&amp;startpage=%2Fflatx%2Findex.jsp" accept-charset="utf-8" onsubmit="loginCheck();">
+						<input type="hidden" name="lf" value="AivMail">
+						<div class="form-group">
+							<div class="columns">
+								<div class="column">
+									<input class="form-control" type="text" id="UserID" name="UserID" autocomplete="username" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Username / Email address" tabindex="0" maxlength="255" required="required" aria-label="Username or Primary email address" autofocus="" style="border-color: rgb(206, 212, 218);">
+								</div>
+								<div class="column">
+									<input class="form-control" type="password" id="Password" name="Password" autocomplete="current-password" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Password" tabindex="0" maxlength="255" required="required" aria-label="Password">
+								</div>
+								<div class="showPassword">
+									<svg onclick="showHidePass()" id="hidePass" xmlns="http://www.w3.org/2000/svg" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="transform: rotate(360deg); display: none;"><path d="M11.83 9L15 12.16V12a3 3 0 0 0-3-3h-.17m-4.3.8l1.55 1.55c-.05.21-.08.42-.08.65a3 3 0 0 0 3 3c.22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53a5 5 0 0 1-5-5c0-.79.2-1.53.53-2.2M2 4.27l2.28 2.28l.45.45C3.08 8.3 1.78 10 1 12c1.73 4.39 6 7.5 11 7.5c1.55 0 3.03-.3 4.38-.84l.43.42L19.73 22L21 20.73L3.27 3M12 7a5 5 0 0 1 5 5c0 .64-.13 1.26-.36 1.82l2.93 2.93c1.5-1.25 2.7-2.89 3.43-4.75c-1.73-4.39-6-7.5-11-7.5c-1.4 0-2.74.25-4 .7l2.17 2.15C10.74 7.13 11.35 7 12 7z" fill="#626262"></path><rect x="0" y="0" width="24" height="24" fill="rgba(0, 0, 0, 0)"></rect></svg>
+									<svg onclick="showHidePass()" id="showPass" xmlns="http://www.w3.org/2000/svg" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="transform: rotate(360deg);"><path d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z" fill="#626262"></path><rect x="0" y="0" width="24" height="24" fill="rgba(0, 0, 0, 0)"></rect></svg>
+								</div>
+							</div>
+						</div>
+						<div class="lostPassword">
+							<a onclick="self.location.href='/password.html';">Lost password ?</a></div>
+						<input type="submit" class="btn" value="Enter">
+						<div class="register"><a tabindex="0" href="signup.html">Sign up</a></div>
+					</form>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
